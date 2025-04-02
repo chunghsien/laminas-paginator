@@ -58,7 +58,7 @@ class ScrollingStylePluginManager extends AbstractPluginManager
      *
      * @var FactoriesConfigurationType
      */
-    protected $factories = [
+    protected array $factories = [
         ScrollingStyle\All::class     => InvokableFactory::class,
         ScrollingStyle\Elastic::class => InvokableFactory::class,
         ScrollingStyle\Jumping::class => InvokableFactory::class,
@@ -81,7 +81,7 @@ class ScrollingStylePluginManager extends AbstractPluginManager
      * @throws InvalidServiceException
      * @psalm-assert ScrollingStyleInterface $instance
      */
-    public function validate($instance)
+    public function validate($instance):void
     {
         if (! $instance instanceof $this->instanceOf) {
             throw new InvalidServiceException(sprintf(
