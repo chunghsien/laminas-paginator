@@ -30,7 +30,7 @@ class ScrollingStylePluginManager extends AbstractPluginManager
      *
      * @var array<array-key, string>
      */
-    protected $aliases = [
+    protected array $aliases = [
         'all'     => ScrollingStyle\All::class,
         'All'     => ScrollingStyle\All::class,
         'elastic' => ScrollingStyle\Elastic::class,
