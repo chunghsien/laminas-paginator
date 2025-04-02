@@ -1,5 +1,5 @@
 {
-    "name": "laminas/laminas-paginator",
+    "name": "chunghsien/laminas-paginator",
     "description": "Paginate collections of data from arbitrary sources",
     "license": "BSD-3-Clause",
     "keywords": [
